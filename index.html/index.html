@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protofilo : Amir Nageh Mohamed</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+        body {
+            font-family: 'Poppins', Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #0f1011; 
+            color: #d1d5db; 
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px 10%; 
+            min-height: 70vh; 
+            background: radial-gradient(circle at 30% 50%, rgba(20, 25, 30, 0.8) 0%, #0f1011 70%); 
+        }
+
+        .header-text {
+            flex: 1;
+            text-align: left;
+            padding-right: 40px; 
+        }
+
+        .header-text::before {
+            content: "Hello,";
+            display: block;
+            color: #facc15; 
+            font-size: 40px; 
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .header-text h1 {
+            margin: 0;
+            font-size: 64px;
+            color: #ffffff; 
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .header-text p {
+            font-size: 28px; 
+            color: #10b981; 
+            font-weight: 700;
+            margin-top: 5px;
+        }
+
+        .header-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px; 
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); 
+            max-width: 400px; 
+        }
+
+
+        section {
+            max-width: 1000px;
+            margin: 40px auto; 
+            background-color: transparent; 
+            padding: 20px 40px;
+            border-radius: 0; 
+            box-shadow: none; 
+        }
+
+        h2 {
+            color: #ffffff;
+            border-bottom: 2px solid #374151; 
+            padding-bottom: 10px;
+            font-size: 32px;
+        }
+
+        section p, section ul {
+            color: #9ca3af;
+            font-size: 18px;
+        }
+
+        .project-card {
+            border: 1px solid #1f2937; 
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            background-color: #111827; 
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: #3b82f6; 
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            color: #ffffff;
+            font-size: 26px;
+        }
+
+        .project-card a {
+            display: inline-block;
+            background-color: #2563eb; 
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none; 
+            border-radius: 8px;
+            margin-top: 15px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .project-card a:hover {
+            background-color: #1d4ed8; 
+        }
+
+        section a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+
+        section a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: transparent;
+            color: #6b7280;
+            margin-top: 60px;
+            border-top: 1px solid #1f2937;
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 20px;
+            }
+            .header-text {
+                text-align: center;
+                padding-right: 0;
+                margin-bottom: 40px;
+            }
+            .header-text h1 {
+                font-size: 40px;
+            }
+            .header-text p {
+                font-size: 20px;
+            }
+            .header-text::before {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-container">
+        <div class="header-text">
+            <h1>I Am Amir Nageh.</h1>
+            <p> Software Engineering | Backend Developer </p>
+        </div>
+        <div class="header-image">
+            <img src="./WhatsApp Image 2026-10-14 at 10.59.53 PM.jpeg" alt="Amir Nageh">
+        </div>
+    </header>
+
+    
+    <section>
+        <h2 align="middle"><b>For Me</b></h2>
+        <p align="left">I am a student at the Faculty of Computers and Information, specializing in Software Engineering, I have a strong foundation in programming languages and enjoy solving  complex problems </p>
+    </section>
+
+    <section>
+        <h2 align="middle"><b>Projects</b></h2>
+        
+        <div class="project-card">
+            <h3 align = "left"><b>project 1 </b></h3>
+            <p align="left"> <b>Dr Fatma :</b> Task1.</p>
+            <a href="https://github.com/aamirnageh/Task-1" target="_blank" align="middle">View Project</a> 
+        </div> 
+
+          <div class="project-card">
+            <h3 align = "left"><b>project 2 </b></h3>
+            <p align="left"> <b>Dr Fatma :</b> Task2.</p>
+            <a href="https://github.com/aamirnageh/task-2" target="_blank" align="middle">View Project</a> 
+        </div>
+
+    </section>
+
+    <section>
+        <h2 align="left"><b>contact me</b></h2>
+        <p align="left">I would be happy to connect with you if you have opportunities for collaboration</p>
+        <ul style="list-style-type: none; padding: 0;">
+            <li align="left"><strong><b>Email:</b></strong> <a href="mailto:amirnagh6@gmail.com">amirnagh6@gmail.com</a></li>
+            <li align="left"><strong><b>GitHub:</b></strong> <a href="#" target="_blank">My GitHub Profile</a></li>
+        </ul>
+    </section>
+    <footer>
+        <p>Done programing by Amir Nageh &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
